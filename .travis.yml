@@ -3,15 +3,16 @@ arch:
   - amd64
   - ppc64le
 node_js:
-- '10.23'
-install:
-- npm install grunt-cli bower
-- npm install
+  - 10
+  
+addons:
+  apt:
+   update: true
+   packages: 
+      - build-essential 
+      - npm 
+      - grunt-cli bower
+
 script:
 - npm test
-sudo: false
-cache:
-  directories:
-  - esvm
-  - node_modules
-  - src/kibana/bower_components
+
