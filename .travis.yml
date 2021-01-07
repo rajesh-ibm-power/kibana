@@ -4,7 +4,10 @@ arch:
   - ppc64le
 node_js:
   - 10
-  
+
+git:
+    depth: false
+
 addons:
   apt:
    update: true
@@ -13,5 +16,5 @@ addons:
       - npm 
 
 script:
-- npm test
-
+  - npm test
+  - yarn precommit
