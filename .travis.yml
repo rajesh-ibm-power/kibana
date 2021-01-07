@@ -19,4 +19,9 @@ addons:
    packages: 
       - build-essential 
       - npm 
+      - bundle install
+      - nvm install node
+      - node -v
+      - npm i -g yarn
+      
 
