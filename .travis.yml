@@ -20,6 +20,3 @@ addons:
       - build-essential 
       - npm 
 
-script:
-  - npm test
-  - yarn precommit
